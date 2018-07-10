@@ -21,7 +21,7 @@ export default class Welcome extends React.Component{
 
   render () {
     return (
-      <div class="box">
+      <div className="box">
         <div className="MenuBox">
           <Menu
             onClick={this.handleClick}
