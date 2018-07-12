@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Layout, Breadcrumb, Input, Icon, Button } from 'antd'
 import '../style/login.css'
 
@@ -42,9 +43,10 @@ export default class Login extends React.Component{
                 <Breadcrumb.Item>App</Breadcrumb.Item>
                 </Breadcrumb>
                 <form className="enterBox">
+                    <div>{this.props.name}</div>
                     <Input placeholder="请输入用户名" value={userName} name="userName" className="InputBox" onChange={this.changeValue} prefix={userPrefix} suffix={suffix}/>
                     <Input placeholder="请输入密码" value={passWord} name="passWord" className="InputBox" prefix={passPrefix} onChange={this.changeValue} suffix={suffix2}/>
-                    <Button type="primary">登陆</Button>
+                    <Link to="main/option1"><Button type="primary">登陆</Button></Link>
                 </form>
                 {/* <Input
                     placeholder="Enter your username"

@@ -49,7 +49,7 @@ export default class Welcome extends React.Component{
             </Menu.Item>
           </Menu>
           <div>
-          <Login />
+          <Login name="吃了吗"/>
         </div>
         </div>
       </div>
